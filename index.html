@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TODO APP</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <h2>TODO APP</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+            <textarea class="form-control" rows="5" col="24" placeholder="Nueva tarea" id="contenido"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <button type="button" class="btn btn-primary hidden-xs hidden-sm btn-agregar" onclick="agregarTarea()"><i class="fa fa-plus" aria-hidden="true" ></i> Añadir</button>
+                <button type="button" class="btn btn-default visible-xs visible-sm" id="add" onclick="agregarTarea()"><i class="fa fa-cog" aria-hidden="true" ></i> Agregar</button> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+               <div id="tareas-agregadas" class="text-left">
+                </div> 
+            </div>
+        </div> 
+    </section>
+    <script type='text/javascript' src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
